@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
@@ -20,51 +19,83 @@ const About = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Joseph Fleming",
-      position: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80",
-      bio: "With over 20 years of experience in tech growth and venture capital, Joseph has guided hundreds of startups from concept to acquisition. Prior to founding Apex Executive Partners, he served as a Partner at a leading VC firm where he led investments in over 50 technology companies. Joseph holds an MBA from Stanford and is a regular speaker at industry conferences.",
-      expertise: ["strategy", "finance"],
-    },
-    {
-      id: 2,
-      name: "Sarah Mitchell",
-      position: "Head of Strategy",
+      name: "Jo Fleming",
+      position: "Founder of Apex Executive Partners",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80",
-      bio: "Sarah brings 15+ years of corporate strategy experience from Fortune 500 companies. Before joining Apex, she was the Chief Strategy Officer at a global technology firm where she led several successful market expansions. Sarah specializes in competitive positioning and growth strategy. She holds a Ph.D. in Economics from MIT.",
+      bio: "The creation of Apex Executive Partners is driven by Jo's relentless passion in supporting the business community, and she is able to successfully execute this for her clients with the exceptional talent within the Apex associates portfolio. With over 20 years of corporate experience, Jo is a results-driven business leader specialising in commercial and operational growth within innovative technology-focused organisations. Her track record reflects a consistent ability to establish and execute commercial and organisational strategies that drive substantial revenue growth and operational excellence within start-up or private equity backed organisations. Named as one of the Top 20 Most Inspirational Business Leaders for 2 consecutive years, Jo has received numerous accolades, including the Women in Business Award, which underscore her commitment to excellence and leadership.",
       expertise: ["strategy", "operations"],
     },
     {
-      id: 3,
-      name: "David Chen",
-      position: "Financial Advisor",
+      id: 2,
+      name: "John",
+      position: "C-Suite Fractional Board Director",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80",
-      bio: "David's background includes 12 years in investment banking where he specialized in technology sector M&A transactions. His analytical approach to financial modeling and valuation has helped clients secure over $500M in funding. David holds a CFA designation and a degree in Finance from the Wharton School of Business.",
-      expertise: ["finance"],
+      bio: "With over 40 years of experience as a Board Director, Strategy Consultant, and Entrepreneur, John has started seven of his own businesses and advised over 100 scale-ups, family businesses, and SMEs on strategy, growth, and innovation. John has been ranked among the Top UK Entrepreneurs and Innovators, and has won a Lifetime Achievement Award.",
+      expertise: ["strategy", "finance"],
+    },
+    {
+      id: 3,
+      name: "Pia",
+      position: "Commercial Business Lawyer",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80",
+      bio: "Pia is a dual qualified (English/Danish) pragmatic corporate & commercial solicitor with many years' experience advising a wide range of business clients including start-ups, SMEs and listed companies on a multitude of corporate & commercial legal issues including buying and selling of businesses/companies (M&A), cross-border transactions.",
+      expertise: ["legal"],
     },
     {
       id: 4,
-      name: "Michael Roberts",
-      position: "Operations Consultant",
+      name: "Claudio",
+      position: "United Emirates CFO, Change Agent",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80",
-      bio: "Michael is an operations expert with experience optimizing processes for companies ranging from early-stage startups to Fortune 100 corporations. His specialty lies in identifying inefficiencies and implementing lean methodologies that have saved clients millions in operational costs. He holds an MBA from INSEAD.",
-      expertise: ["operations"],
+      bio: "Project and Finance Executive for processes of organizational transition. Advisory Board Member (Advisory Council Team ex-FGV) for small & medium size organizations. Change agent leading to corporate restructuring and cultural transformation, adding value to organizations through entrepreneurial mindset and spirit of innovation.",
+      expertise: ["finance", "operations"],
     },
     {
       id: 5,
-      name: "Jennifer Lee",
-      position: "Technology Advisor",
+      name: "Jade",
+      position: "UK Employment Law Solicitor",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80",
-      bio: "Jennifer is a former CTO with extensive experience in scaling technology infrastructure for high-growth companies. She specializes in helping businesses make strategic technology decisions that support rapid growth without sacrificing stability. Jennifer has a Master's in Computer Science from Stanford University.",
-      expertise: ["technology"],
+      bio: "Jade is a highly skilled and registered solicitor specialising in employment law, dedicated to helping UK companies navigate the complexities of workplace regulations with confidence. With a proactive approach, Jade ensures businesses remain fully compliant with employment law, safeguarding them from costly disputes, legal pitfalls, and reputational damage.",
+      expertise: ["legal"],
     },
     {
       id: 6,
-      name: "Robert Wilson",
-      position: "Legal Counsel",
+      name: "David",
+      position: "Digital Transformation Specialist",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80",
-      bio: "Robert brings 20 years of corporate legal experience with a focus on startup law, intellectual property, and M&A transactions. As a former partner at a prominent law firm, he has advised hundreds of entrepreneurs on legal matters critical to business success. Robert holds a J.D. from Harvard Law School.",
-      expertise: ["legal"],
+      bio: "David is a professionally qualified customer focused programme and digital transformation delivery specialist, with extensive international experience in the planning, execution and delivery of complex programmes and project portfolios. David works closely with our clients to design and develop class leading technical solutions.",
+      expertise: ["technology", "operations"],
+    },
+    {
+      id: 7,
+      name: "Stephen",
+      position: "Business Intelligence Specialist",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80",
+      bio: "With a background in serious fraud and cybercrime investigation, Stephen delivers In-Depth Business Rival Research, Helping Businesses Stay Informed and Stay Ahead. Stephen works with business owners, executives, and investors who need clear, raw data on their competitors to make strategic decisions with confidence. His focus is on precision.",
+      expertise: ["technology", "strategy"],
+    },
+    {
+      id: 8,
+      name: "Martin",
+      position: "Sustainability and Growth Specialist",
+      image: "https://images.unsplash.com/photo-1562788869-4ed32648eb72?auto=format&fit=crop&q=80",
+      bio: "With a proven track record of driving 250% company growth, Martin specializes in helping ambitious business owners build sustainable, scalable, and sellable ventures. Whether you're looking to streamline operations, scale effectively, or prepare your business for a successful exit, Martin can support.",
+      expertise: ["operations", "strategy"],
+    },
+    {
+      id: 9,
+      name: "Margaret",
+      position: "Executive Coach",
+      image: "https://images.unsplash.com/photo-1614644147724-2d4785d69962?auto=format&fit=crop&q=80",
+      bio: "Margaret is a PGC Senior Practitioner in Business & Executive Coaching and a Fellow of the Chartered Management Institute. She specialises in 121 Leadership & Management Coaching, Psychometric Assessments, Coaching Workshops, Transitional & On-Boarding Coaching.",
+      expertise: ["operations"],
+    },
+    {
+      id: 10,
+      name: "Dan",
+      position: "Executive Business Director",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80",
+      bio: "Executive Business Director | Scaling Businesses | Driving Growth & Turnarounds. With over 30 years of leadership experience at board and MD level, Dan specialises in guiding businesses to achieve exceptional growth and long-term success. From shaping strategy to empowering leadership teams. Every business faces pivotal moments—whether it's scaling up or turning around performance—and Dan provides the expertise to navigate these critical transitions successfully.",
+      expertise: ["strategy", "operations"],
     },
   ];
   
@@ -122,7 +153,7 @@ const About = () => {
         <title>About Us | Apex Executive Partners</title>
         <meta
           name="description"
-          content="Meet the expert team behind Apex Executive Partners. With decades of combined experience, we deliver tailored business consulting for companies at every growth stage."
+          content="Meet the expert team behind Apex Executive Partners. Our associates are dedicated to helping businesses develop innovative strategies to achieve their goals and drive profitability."
         />
       </Helmet>
       
@@ -144,7 +175,7 @@ const About = () => {
                 About Us
               </h1>
               <p className="text-xl text-gray-300 max-w-2xl">
-                We are a team of seasoned business consultants dedicated to helping companies achieve sustainable growth and operational excellence.
+                Empowering entrepreneurs and professionals with tailored business strategies for growth-focused businesses.
               </p>
             </motion.div>
           </div>
@@ -164,13 +195,13 @@ const About = () => {
                   Our Story
                 </h2>
                 <p className="text-gray-600 mb-4">
-                  Apex Executive Partners was founded in 2015 by Joseph Fleming after he recognized a critical gap in the consulting industry: the lack of tailored, actionable advice for businesses at different growth stages.
+                  Welcome to Apex Executive Partners. Our expert associates are dedicated to helping businesses develop innovative strategies to achieve their goals and drive profitability.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Having spent two decades in venture capital and witnessing both spectacular successes and preventable failures, Joseph assembled a team of industry experts who shared his vision of providing truly customized consulting that delivers measurable results.
+                  We believe that the key to success is a collaborative approach that puts your needs first. Our team works closely with you every step of the way to ensure that our solutions are aligned with your goals and objectives.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Today, Apex Executive Partners works with clients ranging from pre-seed startups to established enterprises, maintaining our founding principle: we succeed only when our clients succeed.
+                  We offer tailored solutions that will elevate your business to the next level. Ready to build a smarter, stronger business? Let's talk!
                 </p>
               </motion.div>
               
@@ -231,8 +262,8 @@ const About = () => {
                 className="relative rounded-lg overflow-hidden shadow-xl order-2 md:order-1"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
-                  alt="Joseph Fleming"
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+                  alt="Jo Fleming"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -248,20 +279,17 @@ const About = () => {
                   Meet Our Founder
                 </h2>
                 <p className="text-gray-600 mb-4">
-                  Joseph Fleming brings over 20 years of experience in tech growth and venture capital to his role as Founder and CEO of Apex Executive Partners.
+                  The creation of Apex Executive Partners is driven by Jo's relentless passion in supporting the business community, and she is able to successfully execute this for her clients with the exceptional talent within the Apex associates portfolio.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Prior to founding Apex, Joseph was a Partner at Horizon Ventures where he led investments in over 50 technology companies, achieving a portfolio return rate in the top quartile of VC firms. His hands-on approach to advising portfolio companies revealed his true passion: helping entrepreneurs build sustainable businesses.
+                  With over 20 years of corporate experience, Jo is a results-driven business leader specialising in commercial and operational growth within innovative technology-focused organisations. Her track record reflects a consistent ability to establish and execute commercial and organisational strategies that drive substantial revenue growth and operational excellence within start-up or private equity backed organisations.
                 </p>
                 <p className="text-gray-600 mb-6">
-                  Joseph holds an MBA from Stanford University and is a regular speaker at industry conferences including TechCrunch Disrupt and the Venture Capital Summit. His thought leadership on business strategy has been featured in publications such as Forbes, Harvard Business Review, and Entrepreneur.
+                  Named as one of the Top 20 Most Inspirational Business Leaders for 2 consecutive years, Jo has received numerous accolades, including the Women in Business Award, which underscore her commitment to excellence and leadership.
                 </p>
                 <div className="flex space-x-4">
                   <a href="#" aria-label="LinkedIn" className="text-navy hover:text-gold transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                  </a>
-                  <a href="#" aria-label="Twitter" className="text-navy hover:text-gold transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
                   </a>
                 </div>
               </motion.div>
@@ -270,11 +298,11 @@ const About = () => {
         </section>
 
         {/* Team Section */}
-        <section className="py-20 bg-gray-50">
+        <section id="team" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <SectionTitle
               subtitle="Our Team"
-              title="Meet the Experts"
+              title="Apex Executive Associates"
               centered={true}
             />
             
@@ -323,7 +351,7 @@ const About = () => {
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                     <p className="text-gold font-medium mb-4">{member.position}</p>
-                    <p className="text-gray-600 mb-4 line-clamp-3">{member.bio}</p>
+                    <p className="text-gray-600 mb-4">{member.bio}</p>
                     <div className="flex flex-wrap gap-2">
                       {member.expertise.map((skill) => (
                         <span
@@ -341,6 +369,79 @@ const About = () => {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 text-center">
+            <SectionTitle
+              subtitle="How We Work"
+              title="Our Pricing Model"
+              centered={true}
+            />
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="max-w-3xl mx-auto mb-12"
+            >
+              <p className="text-lg text-gray-700 mb-6">
+                Our associates are all hugely professional and experienced business executives in their own right, who once aligned to your company, will agree the project scope and provide a detailed cost analysis.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Costs are determined on either a day or a project rate. Apex Associates fees typically range from £600-£1800 per day dependant on the depth of the project and the skills required to deliver.
+              </p>
+              <p className="text-sm italic text-gray-600">
+                *Our money back guarantee is subject to terms and conditions included within terms and conditions available on request.
+              </p>
+            </motion.div>
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-2xl font-bold mb-4">Fixed Fee</h3>
+                <p className="text-gray-700 mb-6">
+                  Clients with complex one off needs prefer this package to add the skills and resource to your business FAST.
+                </p>
+                <CTAButton text="Find Out More" href="/contact" />
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-2xl font-bold mb-4">Retain and Grow</h3>
+                <p className="text-gray-700 mb-6">
+                  Perfect for clients with ad-hoc needs to utilise our Associates services on a fixed-fee monthly retainer package.
+                </p>
+                <CTAButton text="Find Out More" href="/contact" />
+              </motion.div>
+            </div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="mt-12"
+            >
+              <CTAButton 
+                text="Looking to join our TEAM of associates?"
+                href="/contact"
+                className="px-8 py-3"
+              />
+            </motion.div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 bg-navy text-white">
           <div className="container mx-auto px-4 text-center">
@@ -351,16 +452,27 @@ const About = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Work With Us?
+                Transform Your Business with Apex Executive Partners
               </h2>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                Let's discuss how our team can help your business achieve its goals.
+                Request our free Business ToolKit here
               </p>
-              <CTAButton
-                text="Contact Us Today"
-                href="/contact"
-                className="px-8 py-3"
-              />
+              
+              <form className="flex flex-col md:flex-row gap-4 max-w-lg mx-auto mb-4">
+                <input
+                  type="email"
+                  placeholder="Your Email Address"
+                  className="p-3 rounded-lg flex-grow text-gray-800"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="bg-gold hover:bg-gold-light text-navy font-bold py-3 px-6 rounded-lg transition-colors"
+                >
+                  SIGN UP
+                </button>
+              </form>
+              <p className="text-xs text-gray-300">Subscribe Here for free toolkits and more!</p>
             </motion.div>
           </div>
         </section>
