@@ -31,6 +31,8 @@ const AboutSection = () => {
           />
         </motion.div>
         
+        <h3 className="text-2xl font-bold text-center mb-8">Unlock Your Business Potential</h3>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-12">
           {guarantees.map((guarantee, index) => (
             <GuaranteeCard 
@@ -41,6 +43,16 @@ const AboutSection = () => {
             />
           ))}
         </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mt-8 text-sm italic text-gray-600"
+        >
+          *Backed by our money-back guarantee subject to terms and conditions
+        </motion.div>
       </div>
     </section>
   );
@@ -88,7 +100,7 @@ const guarantees = [
   },
   {
     title: "SATISFACTION",
-    description: "Or Your Money Back (Backed by our money-back guarantee).",
+    description: "Or Your Money Back.",
   },
 ];
 

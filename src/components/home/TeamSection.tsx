@@ -13,7 +13,7 @@ const TeamSection = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           subtitle="Our Team"
-          title="Meet Our Expert Associates"
+          title="Your Strategic Growth Partners"
           centered={true}
         />
         
@@ -96,79 +96,96 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, role, bio, delay 
   );
 };
 
-// Team data
+// Team data with complete information
 const team = [
   {
     name: "Jo Fleming",
     role: "Founder",
     bio: [
-      "Founder of Apex Executive Partners.",
-      "Over 20 years of corporate experience.",
-      "Results-driven business leader specializing in commercial and operational growth within innovative technology-focused organizations."
+      "The creation of Apex Executive Partners is driven by Jo's relentless passion in supporting the business community, and she is able to successfully execute this for her clients with the exceptional talent within the Apex associates portfolio.",
+      "With over 20 years of corporate experience, Jo is a results-driven business leader specialising in commercial and operational growth within innovative technology-focused organisations.",
+      "Her track record reflects a consistent ability to establish and execute commercial and organisational strategies that drive substantial revenue growth and operational excellence within start-up or private equity backed organisations.",
+      "Named as one of the Top 20 Most Inspirational Business Leaders for 2 consecutive years, Jo has received numerous accolades, including the Women in Business Award, which underscore her commitment to excellence and leadership."
     ]
   },
   {
     name: "John",
     role: "C-Suite Fractional Board Director",
     bio: [
-      "Over 40 years of experience as a Board Director, Strategy Consultant, and Entrepreneur.",
-      "Started seven businesses and advised over 100 scale-ups, family businesses, and SMEs."
+      "With over 40 years of experience as a Board Director, Strategy Consultant, and Entrepreneur.",
+      "John has started seven of his own businesses and advised over 100 scale-ups, family businesses, and SMEs on strategy, growth, and innovation.",
+      "John has been ranked among the Top UK Entrepreneurs and Innovators, and has won a Lifetime Achievement Award."
     ]
   },
   {
     name: "Pia",
-    role: "Corporate & Commercial Solicitor",
+    role: "Commercial Business Lawyer",
     bio: [
-      "Dual qualified (English/Danish) corporate & commercial solicitor.",
-      "Expertise in M&A, cross-border transactions, and advising start-ups, SMEs, and listed companies."
+      "Pia is a dual qualified (English/Danish) pragmatic corporate & commercial solicitor with many years' experience.",
+      "She advises a wide range of business clients including start-ups, SMEs and listed companies on corporate & commercial legal issues.",
+      "Expertise includes M&A, cross-border transactions, and comprehensive business legal support."
     ]
   },
   {
     name: "Jade",
-    role: "Employment Law Specialist",
+    role: "UK Employment Law Solicitor",
     bio: [
-      "Highly skilled and registered solicitor specializing in employment law.",
-      "Helps UK companies navigate workplace regulations and avoid legal pitfalls."
+      "Jade is a highly skilled and registered solicitor specialising in employment law.",
+      "She is dedicated to helping UK companies navigate the complexities of workplace regulations with confidence.",
+      "With a proactive approach, Jade ensures businesses remain fully compliant with employment law, safeguarding them from costly disputes, legal pitfalls, and reputational damage."
+    ]
+  },
+  {
+    name: "Claudio",
+    role: "United Emirates CFO, Change Agent",
+    bio: [
+      "Project and Finance Executive for processes of organizational transition.",
+      "Advisory Board Member (Advisory Council Team ex-FGV) for small & medium size organizations.",
+      "Change agent leading to corporate restructuring and cultural transformation, adding value to organizations through entrepreneurial mindset and spirit of innovation."
     ]
   },
   {
     name: "David",
     role: "Digital Transformation Specialist",
     bio: [
-      "Digital Transformation Specialist.",
-      "Expertise in designing and delivering class-leading technical solutions."
+      "Professionally qualified customer-focused programme and digital transformation delivery specialist.",
+      "Extensive international experience in the planning, execution and delivery of complex programmes and project portfolios.",
+      "Works closely with clients to design and develop class-leading technical solutions."
     ]
   },
   {
     name: "Stephen",
     role: "Business Intelligence Specialist",
     bio: [
-      "Background in fraud and cybercrime investigation.",
-      "Provides in-depth business rival research to help businesses stay ahead."
+      "With a background in serious fraud and cybercrime investigation.",
+      "Delivers In-Depth Business Rival Research, helping businesses stay informed and stay ahead.",
+      "Works with business owners, executives, and investors who need clear, raw data on their competitors to make strategic decisions with confidence."
     ]
   },
   {
     name: "Martin",
     role: "Sustainability & Growth Specialist",
     bio: [
-      "Sustainability and growth specialist.",
-      "Proven track record of driving 250% company growth."
+      "With a proven track record of driving 250% company growth.",
+      "Specializes in helping ambitious business owners build sustainable, scalable, and sellable ventures.",
+      "Whether you're looking to streamline operations, scale effectively, or prepare your business for a successful exit, Martin can support."
     ]
   },
   {
     name: "Margaret",
     role: "Executive Coach",
     bio: [
-      "Executive Coach.",
-      "Specializes in leadership coaching, psychometric assessments, and transitional coaching."
+      "Margaret is a PGC Senior Practitioner in Business & Executive Coaching and a Fellow of the Chartered Management Institute.",
+      "She specializes in 121 Leadership & Management Coaching, Psychometric Assessments, Coaching Workshops, Transitional & On-Boarding Coaching."
     ]
   },
   {
     name: "Dan",
     role: "Executive Business Director",
     bio: [
-      "Over 30 years of leadership experience at board and MD level.",
-      "Guides businesses to achieve exceptional growth and long-term success."
+      "Executive Business Director | Scaling Businesses | Driving Growth & Turnarounds.",
+      "With over 30 years of leadership experience at board and MD level.",
+      "Dan specializes in guiding businesses to achieve exceptional growth and long-term success. From shaping strategy to empowering leadership teams."
     ]
   }
 ];

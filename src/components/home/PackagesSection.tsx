@@ -31,15 +31,40 @@ const PackagesSection = () => {
           viewport={{ once: true }}
           className="bg-white border border-gray-200 p-8 rounded-lg shadow-sm max-w-3xl mx-auto text-center"
         >
-          <h3 className="text-xl font-bold mb-4">Pricing Details</h3>
-          <p className="mb-4">Apex Associates fees typically range from £600-£1800 per day, depending on project scope and skills required.</p>
-          <p className="text-sm text-gray-500 italic">Money-back guarantee subject to terms and conditions.</p>
+          <h3 className="text-xl font-bold mb-4">How We Work And Price For Services Provided</h3>
+          <p className="mb-4">Apex Executive Partners Associates are all hugely professional and experienced business executives in their own right, who once aligned to your company, will agree the project scope and provide a detailed cost analysis.</p>
+          <p className="mb-4">Costs are determined on either a day or a project rate.</p>
+          <p className="mb-4">Apex Associates fees typically range from £600-£1800 per day depending on the depth of the project and the skills required to deliver.</p>
+          <p className="text-sm text-gray-500 italic">*Our money-back guarantee is subject to terms and conditions available on request.</p>
           
           <div className="mt-8">
             <CTAButton 
               text="CONTACT US FOR MORE INFORMATION ON OUR PACKAGES"
               href="/contact"
               className="uppercase"
+            />
+          </div>
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <h4 className="text-lg font-semibold mb-3">Our Approach</h4>
+          <p className="max-w-xl mx-auto">
+            We believe that the key to success is a collaborative approach that puts your needs first.
+            Our team works closely with you every step of the way to ensure that our solutions are aligned with your goals and objectives.
+          </p>
+          
+          <div className="mt-6">
+            <CTAButton 
+              text="Looking to join our TEAM of associates?"
+              href="/contact#careers"
+              variant="secondary"
+              className="mt-4"
             />
           </div>
         </motion.div>
@@ -72,11 +97,11 @@ const PriceCard: React.FC<PriceCardProps> = ({ title, description, delay = 0 }) 
 const packages = [
   {
     title: "Fixed Fee",
-    description: "For clients with complex one-off needs. We provide a clear scope of work with transparent pricing that won't change during the project.",
+    description: "Perfect for clients with complex one-off needs to add the skills and resource to their business FAST. We provide a clear scope of work with transparent pricing that won't change during the project.",
   },
   {
     title: "Retain and Grow",
-    description: "For clients with ad-hoc needs on a fixed-fee monthly retainer. Get ongoing access to our expertise with predictable monthly costs.",
+    description: "Perfect for clients with ad-hoc needs to utilize our Associates services on a fixed-fee monthly retainer package. Get ongoing access to our expertise with predictable monthly costs.",
   },
 ];
 
