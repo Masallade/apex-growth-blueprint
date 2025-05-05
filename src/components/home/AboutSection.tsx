@@ -32,6 +32,7 @@ const AboutSection = () => {
         </motion.div>
         
         <h3 className="text-2xl font-bold text-center mb-8">Unlock Your Business Potential</h3>
+        <p className="text-center text-lg font-semibold text-navy mb-10">EMPOWERING ENTREPRENEURS AND PROFESSIONALS WITH TAILORED BUSINESS STRATEGIES</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-12">
           {guarantees.map((guarantee, index) => (
@@ -51,7 +52,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-center mt-8 text-sm italic text-gray-600"
         >
-          *Backed by our money-back guarantee subject to terms and conditions
+          *Backed by our money-back guarantee subject to terms and conditions available on request
         </motion.div>
       </div>
     </section>
