@@ -71,8 +71,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="not-italic text-gray-300 mb-4">
-              <p>123 Business Avenue</p>
-              <p>London, UK EC2A 4NE</p>
+              <p>81-83 Market Street</p>
+              <p>York YO42 2AE</p>
             </address>
             <ul className="space-y-2">
               <li className="flex items-center">
@@ -91,7 +91,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 mb-4 md:mb-0">
-            &copy; {currentYear} Apex Executive Partners. All rights reserved.
+            &copy; {currentYear} Apex Executive Partners (a trading name of MVBR Consultancy). Registered Office: 81-83 Market Street, York YO42 2AE.
           </div>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-gray-400 hover:text-gold transition-colors">Privacy Policy</Link>

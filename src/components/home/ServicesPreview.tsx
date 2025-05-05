@@ -2,6 +2,7 @@
 import SectionTitle from "@/components/common/SectionTitle";
 import ServiceCard from "@/components/common/ServiceCard";
 import CTAButton from "@/components/common/CTAButton";
+import { motion } from "framer-motion";
 
 const ServicesPreview = () => {
   const services = [
@@ -22,7 +23,7 @@ const ServicesPreview = () => {
           <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
         </svg>
       ),
-      title: "Seed-Stage Consulting",
+      title: "Business Consulting for Seed & Growth-Stage",
       description:
         "Strategic guidance to help early-stage startups establish solid foundations, validate business models, and prepare for scalable growth.",
       link: "/services#seed-stage",
@@ -43,9 +44,9 @@ const ServicesPreview = () => {
           <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
         </svg>
       ),
-      title: "SME Optimization",
+      title: "Business Optimisation for SMEs",
       description:
-        "Comprehensive analysis and implementation of efficiency improvements for established small and medium enterprises looking to maximize profitability.",
+        "Streamline & Scale: Comprehensive analysis and implementation of efficiency improvements for established small and medium enterprises looking to maximize profitability.",
       link: "/services#sme",
     },
     {
@@ -64,9 +65,9 @@ const ServicesPreview = () => {
           <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
         </svg>
       ),
-      title: "Venture Growth",
+      title: "Venture Growth Consulting",
       description:
-        "Accelerate your high-potential venture through our tailored scaling strategies, funding acquisition support, and market expansion planning.",
+        "Fuelling Hyper-Scalable Businesses: Accelerate your high-potential venture through our tailored scaling strategies, funding acquisition support, and market expansion planning.",
       link: "/services#venture",
     },
     {
@@ -93,9 +94,9 @@ const ServicesPreview = () => {
           <path d="M5 15H2"></path>
         </svg>
       ),
-      title: "M&A Advisory",
+      title: "M&A Advisory Services",
       description:
-        "Expert guidance through mergers, acquisitions, and other strategic transactions to ensure optimal valuations and seamless integrations.",
+        "Strategic Support for Successful Mergers & Acquisitions: Expert guidance through mergers, acquisitions, and other strategic transactions to ensure optimal valuations and seamless integrations.",
       link: "/services#ma",
     },
   ];
@@ -105,9 +106,19 @@ const ServicesPreview = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           subtitle="Our Services"
-          title="Strategic Solutions for Every Business Stage"
+          title="EXPERT BUSINESS CONSULTING SERVICES"
           centered={true}
         />
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center max-w-3xl mx-auto mb-12 text-lg text-gray-700"
+        >
+          We offer tailored solutions that will elevate your business to the next level.
+        </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => (
@@ -122,7 +133,39 @@ const ServicesPreview = () => {
           ))}
         </div>
 
-        <div className="flex justify-center">
+        <div className="max-w-2xl mx-auto mt-12 bg-gray-50 p-6 rounded-lg">
+          <h3 className="text-xl font-bold text-center mb-4">Included in All Services:</h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {includedFeatures.map((feature, index) => (
+              <motion.li 
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="flex items-center text-gray-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-gold mr-2"
+                >
+                  <path d="M20 6 9 17l-5-5"></path>
+                </svg>
+                {feature}
+              </motion.li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="flex justify-center mt-10">
           <CTAButton
             text="See All Services"
             href="/services"
@@ -148,5 +191,12 @@ const ServicesPreview = () => {
     </section>
   );
 };
+
+const includedFeatures = [
+  "Full company appraisal",
+  "In-Depth Competitor Analysis",
+  "Implementation of best practices",
+  "On-going support"
+];
 
 export default ServicesPreview;

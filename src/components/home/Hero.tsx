@@ -22,19 +22,28 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-2"
           >
-            Empowering Entrepreneurs with Tailored Business Strategies
+            APEX EXECUTIVE PARTNERS
           </motion.h1>
           
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-white/90 mb-8"
+            className="text-xl md:text-2xl text-white/90 mb-4"
           >
-            Expert-led consulting for startups, SMEs, and high-growth ventures.
+            EMPOWERING ENTREPRENEURS AND PROFESSIONALS WITH TAILORED BUSINESS STRATEGIES.
           </motion.h2>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-lg text-white/80 mb-8"
+          >
+            Supporting Growth-Focused Businesses
+          </motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 30 }}

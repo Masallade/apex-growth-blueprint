@@ -12,9 +12,9 @@ const CTASection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-6"
+            className="text-3xl md:text-4xl font-bold mb-6 uppercase"
           >
-            Ready to Transform Your Business?
+            Ready to Build a Smarter, Stronger Business?
           </motion.h2>
           
           <motion.p
@@ -24,7 +24,7 @@ const CTASection = () => {
             viewport={{ once: true }}
             className="text-lg text-gray-300 mb-8"
           >
-            Get your free business growth toolkit and discover how our tailored consulting services can help your company reach its full potential.
+            Let's talk about how our tailored consulting services can help your company reach its full potential.
           </motion.p>
           
           <motion.div
@@ -35,14 +35,14 @@ const CTASection = () => {
             className="flex flex-col sm:flex-row justify-center gap-4"
           >
             <CTAButton
-              text="Get Your Free Toolkit"
-              href="/insights#toolkit"
-              className="px-8 py-3"
+              text="LET'S TALK!"
+              href="/contact"
+              className="px-8 py-3 uppercase"
             />
             
             <CTAButton
-              text="Schedule a Consultation"
-              href="/contact"
+              text="Get Your Free Toolkit"
+              href="/insights#toolkit"
               variant="outline"
               className="px-8 py-3 text-white border-white hover:bg-white/20"
             />

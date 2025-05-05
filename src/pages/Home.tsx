@@ -3,9 +3,12 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
+import AboutSection from "@/components/home/AboutSection";
 import ServicesPreview from "@/components/home/ServicesPreview";
-import TeamPreview from "@/components/home/TeamPreview";
+import TeamSection from "@/components/home/TeamSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
+import InsightsSection from "@/components/home/InsightsSection";
+import PackagesSection from "@/components/home/PackagesSection";
 import CTASection from "@/components/home/CTASection";
 
 const Home = () => {
@@ -27,9 +30,12 @@ const Home = () => {
       >
         <Hero />
         <TrustBar />
+        <AboutSection />
         <ServicesPreview />
-        <TeamPreview />
+        <TeamSection />
+        <PackagesSection />
         <TestimonialsSection />
+        <InsightsSection />
         <CTASection />
       </motion.div>
     </>
